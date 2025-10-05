@@ -18,11 +18,12 @@
 ## FINAL SUBMISSION DEADLINE
 **Skills Final Submission**:  
 
-<b style="color:red;">**6th of May 2025 at 12:00 pm**</b>	
+<b style="color:red;">**xx**</b>	
 
   Submissions will open a few days before the deadline. Late submissions will face penalties.  
   For more details, visit: [UCL Late Submission Policy](https://www.ucl.ac.uk/arts-sciences/current/assessment/latesubmission).
 
+<!--
 ---
 
 # Skills Module 1 - HACKING THE IOT
@@ -66,3 +67,4 @@ In this module, we’ll learn how to collect and analyze data from cities. We’
 
 ## ASSIGNMENT
 Choose a data source like Flickr or Google. Pick an area that’s different from your main project site and create maps to visualize the data. Show how your code works, make different data requests, and display the results (like type, year, comments, etc.). Make sure your dataset is large and doesn’t overlap with your teammates’ work.
+-->

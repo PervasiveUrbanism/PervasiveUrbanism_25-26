@@ -1,6 +1,6 @@
 # Skills Module Pervasive Urbanism 2025-26
 
-![alt text](assets\Landscape.png "Logo Title Text 1")
+![alt text](assets/Landscape.png "Logo Title Text 1")
 
 # Dates
 | Nr   |           Date|       Module|                  Topic|    Time|      Location|
