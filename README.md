@@ -3,17 +3,17 @@
 ![alt text](assets/Landscape.png "Logo Title Text 1")
 
 # Dates
-| Nr   |           Date|       Module|                  Topic|    Time|      Location|
-|-----:|---------------| ------------|-----------------------|--------|--------------|
-|     1|               |             |                       |        |              |
-|     2|               |             |                       |        |              |
-|     3|               |             |                       |        |              |
-|     4|               |             |                       |        |              |
-|     5|               |             |                       |        |              |
-|     6|               |             |                       |        |              |
-|     7|               |             |                       |        |              |
-|     8|               |             |                       |        |              |
-|     9|               |             |                       |        |              |
+| Nr   |           Date|       Module|                  Topic|    Time|              Location|
+|-----:|---------------| ------------|-----------------------|--------|----------------------|
+|     1|               |   Module 1.1|Arduino 101            |        | Level 5, Gower Street|
+|     2|               |   Module 1.2|Sensors and Actuators  |        | Level 5, Gower Street|
+|     3|               |   Module 1.3|Data Visualization     |        | Level 5, Gower Street|
+|     4|               |   Module 2.1|Python 101             |        | Level 5, Gower Street|
+|     5|               |   Module 2.2|Data Mining            |        | Level 5, Gower Street|
+|     6|               |   Module 2.3|Data Visualization     |        | Level 5, Gower Street|
+|     7|               |   Module 3.1|                       |        |              |
+|     8|               |   Module 3.2|                       |        |              |
+|     9|               |   Module 3.3|                       |        |              |
 
 
 
@@ -26,7 +26,23 @@ This module focuses on designing a **wearable prototype** that acts as a prosthe
 Through **GPS integration**, the devices will be able to track time and location, while events can be **logged or transmitted** directly to a computer. You will also learn how to **visualize and represent the recorded data** within **Rhino/Grasshopper**.
 
 In addition, we will explore techniques for the **physical design and fabrication** of your prototype — including **laser cutting**, **3D printing**, and **PCB design**.
-  
+
+*The GitHub repository also contains an Excel file listing all required components for purchase.*
+
+### Skills Module 1.1: Arduino 101
+
+We will introduce the **Arduino ecosystem** and the **Arduino IDE**, covering the different types of boards, how they work, and how to program them.
+The focus of this session is the **Arduino coding language**, which is based on **C**, and forms the foundation for prototyping interactive devices.
+
+### Skills Module 1.2: Sensors and Actuators
+
+In this session, we’ll explore the **physical side of interaction** — the types of sensors available, how to connect them, and how to interpret and record their readings.
+We’ll also look at how to **combine multiple data streams**, such as **GPS coordinates**, **galvanic skin response**, or **heartbeat sensors**, to capture and map embodied experiences of the city.
+
+### Skills Module 1.3: Data Visualization
+
+How can sensor readings be represented visually? This session focuses on **data visualization techniques in Rhino/Grasshopper**.
+You will learn how to **read CSV files**, create **basic data-driven graphs**, and work with **geographic data** to represent your collected information spatially.
 
 ## Skills Module 2: Cartographies of Affect
 
@@ -36,6 +52,18 @@ You will also learn how to **extract and analyse data** from platforms like **Fl
 
 All tasks will be carried out using a combination of **Python**, **Rhino/Grasshopper**, and **Adobe Illustrator**.
 
+### Skills Module 2.1: Python 101
+
+An **introduction to Python** — we will explore different IDEs, set up your working environment, and take the first steps in programming.
+This session establishes the **foundation** for all subsequent lessons in this module.
+
+### Skills Module 2.2: Data Mining
+
+We will examine **data-mining techniques** and learn how to connect to **public APIs** such as **Flickr** or **Google**, collecting geotagged and textual information for spatial analysis.
+
+### Skills Module 2.3: Data Visualization
+
+In this session, we’ll look in more depth at how to **display and interpret the acquired data**, combining **Python**, **Grasshopper**, and **Adobe Illustrator** to produce meaningful visual outputs.
 
 ## Skills Module 3: Affective Cinematics
 

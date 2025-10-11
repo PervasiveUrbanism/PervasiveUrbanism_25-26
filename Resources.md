@@ -207,7 +207,7 @@ A curated, tried-and-tested set:
 Helpful resources:
 
 * [Patrick Stotz – Mapping 101](https://github.com/PatrickStotz/mapping_101)
-* [Gentle Introduction to GIS](https://docs.qgis.org/3.22/en/docs/gentle_gis_introduction/index.html)
+* [Gentle Introduction to GIS](https://docs.qgis.org/3.40/en/docs/gentle_gis_introduction/index.html)
 * [Training Manual](https://docs.qgis.org/3.22/en/docs/training_manual/index.html)
 * [Terrain Analysis](https://docs.qgis.org/2.14/en/docs/training_manual/rasters/terrain_analysis.html)
 * [GIS Stack Exchange](https://gis.stackexchange.com/) — for specific questions.
