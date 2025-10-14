@@ -1,16 +1,17 @@
 # Skills Module Pervasive Urbanism 2025-26
 
 ![alt text](assets/Landscape.png "Logo Title Text 1")
+*Cartographies of Affect: Between Destinations, 2024/26*
 
 # Dates
-| Nr   |           Date|       Module|                  Topic|    Time|              Location|
-|-----:|---------------| ------------|-----------------------|--------|----------------------|
-|     1|               |   Module 1.1|Arduino 101            |        | Level 5, Gower Street|
-|     2|               |   Module 1.2|Sensors and Actuators  |        | Level 5, Gower Street|
-|     3|               |   Module 1.3|Data Visualization     |        | Level 5, Gower Street|
-|     4|               |   Module 2.1|Python 101             |        | Level 5, Gower Street|
-|     5|               |   Module 2.2|Data Mining            |        | Level 5, Gower Street|
-|     6|               |   Module 2.3|Data Visualization     |        | Level 5, Gower Street|
+| Nr   |      Date|       Module|                                        Topic|            Time|              Location|
+|-----:|----------| ------------|---------------------------------------------|----------------|----------------------|
+|     1|17.10.2025|   Module 1.1|Cartographies of Affect: Python 101          |   14:00 - 18:00| Level 5, Gower Street|
+|     2|21.10.2025|   Module 1.2|Cartographies of Affect: Data Mining         |   09:30 - 13:00| Level 5, Gower Street|
+|     3|31.10.2025|   Module 1.3|Cartographies of Affect: Data Visualization  |   14:00 - 18:00| Level 5, Gower Street|
+|     4|21.11.2025|   Module 2.1|Prosthetic Clouds: Arduino 101               |   14:00 - 18:00| Level 5, Gower Street|
+|     5|28.11.2025|   Module 2.2|Prosthetic Clouds: Sensors and Actuators     |   14:00 - 18:00| Level 5, Gower Street|
+|     6|05.12.2025|   Module 2.3|Prosthetic Clouds: Data Visualization        |   14:00 - 18:00| Level 5, Gower Street|
 |     7|               |   Module 3.1|                       |        |              |
 |     8|               |   Module 3.2|                       |        |              |
 |     9|               |   Module 3.3|                       |        |              |
@@ -19,7 +20,28 @@
 
 # SKILLS MODULES
 
-## Skills Module 1: Prosthetic Clouds
+## Skills Module 1: Cartographies of Affect
+
+In this module, we will explore **desktop-based data-mining techniques**, starting with publicly available sources such as the **London Datastore**, and learn how to **process and visualize different data formats**.
+
+You will also learn how to **extract and analyse data** from platforms like **Flickr** or **Google**, transforming digital traces into spatial insight. We will apply **text- and image-based sentiment analysis**, as well as introduce **machine-learning methods for object recognition** on the collected datasets.
+
+All tasks will be carried out using a combination of **Python**, **Rhino/Grasshopper**, and **Adobe Illustrator**.
+
+### Skills Module 1.1: Python 101
+
+An **introduction to Python** — we will explore different IDEs, set up your working environment, and take the first steps in programming.
+This session establishes the **foundation** for all subsequent lessons in this module.
+
+### Skills Module 1.2: Data Mining
+
+We will examine **data-mining techniques** and learn how to connect to **public APIs** such as **Flickr** or **Google**, collecting geotagged and textual information for spatial analysis.
+
+### Skills Module 1.3: Data Visualization
+
+In this session, we’ll look in more depth at how to **display and interpret the acquired data**, combining **Python**, **Grasshopper**, and **Adobe Illustrator** to produce meaningful visual outputs.
+
+## Skills Module 2: Prosthetic Clouds
 
 This module focuses on designing a **wearable prototype** that acts as a prosthetic interface between your body and the urban environment. Using **microcontrollers and Arduino**, you will create sensors and actuators that respond to, and influence, your perception of the city.
 
@@ -29,41 +51,22 @@ In addition, we will explore techniques for the **physical design and fabricatio
 
 *The GitHub repository also contains an Excel file listing all required components for purchase.*
 
-### Skills Module 1.1: Arduino 101
+### Skills Module 2.1: Arduino 101
 
 We will introduce the **Arduino ecosystem** and the **Arduino IDE**, covering the different types of boards, how they work, and how to program them.
 The focus of this session is the **Arduino coding language**, which is based on **C**, and forms the foundation for prototyping interactive devices.
 
-### Skills Module 1.2: Sensors and Actuators
+### Skills Module 2.2: Sensors and Actuators
 
 In this session, we’ll explore the **physical side of interaction** — the types of sensors available, how to connect them, and how to interpret and record their readings.
 We’ll also look at how to **combine multiple data streams**, such as **GPS coordinates**, **galvanic skin response**, or **heartbeat sensors**, to capture and map embodied experiences of the city.
 
-### Skills Module 1.3: Data Visualization
+### Skills Module 2.3: Data Visualization
 
 How can sensor readings be represented visually? This session focuses on **data visualization techniques in Rhino/Grasshopper**.
 You will learn how to **read CSV files**, create **basic data-driven graphs**, and work with **geographic data** to represent your collected information spatially.
 
-## Skills Module 2: Cartographies of Affect
 
-In this module, we will explore **desktop-based data-mining techniques**, starting with publicly available sources such as the **London Datastore**, and learn how to **process and visualize different data formats**.
-
-You will also learn how to **extract and analyse data** from platforms like **Flickr** or **Google**, transforming digital traces into spatial insight. We will apply **text- and image-based sentiment analysis**, as well as introduce **machine-learning methods for object recognition** on the collected datasets.
-
-All tasks will be carried out using a combination of **Python**, **Rhino/Grasshopper**, and **Adobe Illustrator**.
-
-### Skills Module 2.1: Python 101
-
-An **introduction to Python** — we will explore different IDEs, set up your working environment, and take the first steps in programming.
-This session establishes the **foundation** for all subsequent lessons in this module.
-
-### Skills Module 2.2: Data Mining
-
-We will examine **data-mining techniques** and learn how to connect to **public APIs** such as **Flickr** or **Google**, collecting geotagged and textual information for spatial analysis.
-
-### Skills Module 2.3: Data Visualization
-
-In this session, we’ll look in more depth at how to **display and interpret the acquired data**, combining **Python**, **Grasshopper**, and **Adobe Illustrator** to produce meaningful visual outputs.
 
 ## Skills Module 3: Affective Cinematics
 
