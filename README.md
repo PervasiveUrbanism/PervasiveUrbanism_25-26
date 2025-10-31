@@ -12,9 +12,9 @@
 |     4|21.11.2025|   Module 2.1|Prosthetic Clouds: Arduino 101               |   14:00 - 18:00| Level 5, Gower Street|
 |     5|28.11.2025|   Module 2.2|Prosthetic Clouds: Sensors and Actuators     |   14:00 - 18:00| Level 5, Gower Street|
 |     6|05.12.2025|   Module 2.3|Prosthetic Clouds: Data Visualization        |   14:00 - 18:00| Level 5, Gower Street|
-|     7|               |   Module 3.1|                       |        |              |
-|     8|               |   Module 3.2|                       |        |              |
-|     9|               |   Module 3.3|                       |        |              |
+|     7|10.11.2025|   Module 3.1|Affective Cinematics                         |   09:00 - 13:00| Room 5.08, Gower Street|
+|     8|17.11.2025|   Module 3.2|Affective Cinematics                         |   09:00 - 13:00| Room 5.08, Gower Street|
+|     9|24.11.2025|   Module 3.3|Affective Cinematics                         |   09:00 - 13:00| Room 5.08, Gower Street|
 
 
 
