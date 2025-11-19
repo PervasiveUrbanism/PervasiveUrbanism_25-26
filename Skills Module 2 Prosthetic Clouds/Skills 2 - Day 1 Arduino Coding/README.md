@@ -181,7 +181,21 @@ When buying a board, students should consider:
 - Useful if you need to connect lots of sensors or devices at once  
 - Same Arduino ecosystem, but not as compact as the Uno or Feather  
 
+# Installation
 
+Download and install the Arduino IDE from this page:
+https://www.arduino.cc/en/software/#app-lab-section
+
+The current version is 2.3.6. The installation is straightforward — just follow the steps and accept everything the installer asks for.
+
+## Working Folder
+Once installed, you might want to set the working folder in the prefernces:
+
+![alt text](images/workingDirectory.png)
+
+## Connecting the board the first time
+
+![alt text](images/Starting.png)
 
 ---
 
@@ -206,6 +220,8 @@ The IDE compiles your sketch into machine code and uploads it to the board:
 ## 001 - Basic LED Blink
 
 The classic first program — making the onboard LED blink once per second.
+
+ [LED_BUILTIN](https://docs.arduino.cc/language-reference/en/variables/constants/ledbuiltin/) is a harcoded value. It adresses Pin 13 and the onboard LED. 
 
 ```cpp
 void setup() {
@@ -236,10 +252,13 @@ Here we introduce a **variable** to control the timing and use the **Serial Moni
 
 | Type      | Size      | Example           | Description           |
 | --------- | --------- | ----------------- | --------------------- |
-| `boolean` | 1 byte    | `true` or `false` | On/off, yes/no values |
-| `char`    | 1 byte    | `'A'`, `'1'`      | A single character    |
+| `boolean` | 1 bit     | `true` or `false` | On/off, yes/no values |
+| `char`    | 1 byte (8 bits)    | `'A'`, `'1'`      | A single character    |
 | `int`     | 2–4 bytes | `42`              | Whole number          |
 | `float`   | 4 bytes   | `3.14`            | Decimal number        |
+
+Typically, there is enough space for your code. But there can be problems — for example, very large text files combined with large libraries may cause memory issues.
+
 
 ![alt text](images/Datatypes.png)
 
@@ -261,6 +280,8 @@ void loop() {
   Serial.println(" ms");
 }
 ```
+
+On an Arduino, the TX LED blinks whenever the board sends data over the serial port. 
 
 ---
 
@@ -434,6 +455,3 @@ void loop() {
   }
 }
 ```
-
-
-
