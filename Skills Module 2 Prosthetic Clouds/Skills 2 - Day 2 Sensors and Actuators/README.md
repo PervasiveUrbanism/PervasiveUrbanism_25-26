@@ -26,6 +26,8 @@ If you run out of hardware ports, you can sometimes use the
 [**SoftwareSerial**](https://www.arduino.cc/en/Reference/softwareSerial) library to create a “virtual” serial port on other pins.  
 > Note: SoftwareSerial isn’t supported or reliable on every non-AVR board. Prefer hardware serial when possible.
 
+![alt text](images/SoftwareSer.png)
+
 **Docs:** [Serial Reference](https://www.arduino.cc/reference/en/language/functions/communication/serial/)
 
 ---
@@ -42,6 +44,8 @@ You can theoretically chain many devices on those two lines. I²C isn’t very f
 - Include the **Wire** library: [`#include <Wire.h>`](https://www.arduino.cc/en/reference/wire)
 - On the UNO R4 WiFi you have dedicated **SDA/SCL** pins (and a JST-SH **Qwiic/STEMMA QT** I²C connector).
 - I²C lines usually need **pull-up resistors**. Most breakout boards already include them.
+
+![alt text](images/22641-ArduinoUnoR4WiFIKit-BMA400.jpg)
 
 **Qwiic / STEMMA QT**  
 SparkFun’s **Qwiic** and Adafruit’s **STEMMA QT** are just small 4-pin I²C connectors (GND, 3V3/5V, SDA, SCL). They make I²C “plug-and-play”.
@@ -62,6 +66,8 @@ SparkFun’s **Qwiic** and Adafruit’s **STEMMA QT** are just small 4-pin I²C 
 **UNO R4 WiFi SPI pins**
 - Header pins: **10 (SS)**, **11 (MOSI)**, **12 (MISO)**, **13 (SCK)**
 - Also available on the **ICSP** header (preferred for shields).
+
+![alt text](images/spipins.png)
 
 Use the **SPI** library: [SPI Reference](https://www.arduino.cc/en/Reference/SPI)
 
@@ -89,7 +95,7 @@ On the UNO R4 WiFi, the ESP32-S3 is set up as a **coprocessor** for connectivity
 
 > Note: On this board you generally **don’t use WiFi and BLE at the same time**.
 
-BLE on Windows can be limited depending on drivers; phones (iOS/Android) are usually the easiest target.
+BLE on Windows is not working; phones (iOS/Android) are usually the easiest target.
 
 ---
 
@@ -126,6 +132,16 @@ void loop() {
   Serial.println(gsr_average);
 }
 ````
+
+[`analogReadResolution()`](https://docs.arduino.cc/language-reference/en/functions/analog-io/analogReadResolution/) let you set the resolution (in bits) of the value returned by analogRead(). It defaults to 10 bits (returns values between 0-1023) for backward compatibility with AVR based boards.
+
+Within the Arduino boards you can find a variety of resolutions that lead to different ranges:
+
+- 10 bits: allow values between 0 and 1023. 
+- 12 bits: allow values between 0 and 4095. 
+- 14 bits: allow values between 0 and 16383. 
+- 16 bits: allow values between 0 and 65535.
+
 
 ---
 
@@ -207,6 +223,41 @@ void loop() {
     Serial.println("__________________________________");
   }
 }
+```
+
+```mermaid
+flowchart TD
+    A["void setup()"] -->|first time| B("void loop()")
+    B --> C["while (Serial1.available())"]
+    
+    C --> D{"if (gps.location.isUpdated())"}
+    D -->|Yes| E[Print line to Serial Monitor]
+    D -->|No| F[skip to next iteration]
+    
+    E --> B
+    F --> B
+    
+
+    style A fill:#fff200,stroke:#fff200,stroke-width:4px
+    style B fill:#f9a01b,stroke:#f9a01b,stroke-width:2pxpx
+    style C fill:#f9a01b,stroke:#f9a01b,stroke-width:2pxpx
+    style D fill:#b2d235,stroke:#b2d235,stroke-width:4pxpx
+    style E fill:#b2d235,stroke:#b2d235,stroke-width:4pxpx
+    style F fill:#ed1c24,stroke:#ed1c24,stroke-width:2pxpx
+    classDef default fill:#ccc,stroke:#ccc,stroke-width:1px
+    class A,B,C,D,E,F default
+    linkStyle 0 stroke:#ccc,stroke-width:2px
+    linkStyle 1 stroke:#ccc,stroke-width:2px
+    linkStyle 2 stroke:#ccc,stroke-width:2px
+    linkStyle 3 stroke:#b2d235,stroke-width:2pxpx
+    linkStyle 4 stroke:#ed1c24,stroke-width:2px
+    linkStyle 5 stroke:#ccc,stroke-width:2px
+    linkStyle 6 stroke:#ccc,stroke-width:2px                
+
+    
+
+
+
 ```
 
 **Escape characters** like `\n` (new line) and `\t` (tab) help format text.
