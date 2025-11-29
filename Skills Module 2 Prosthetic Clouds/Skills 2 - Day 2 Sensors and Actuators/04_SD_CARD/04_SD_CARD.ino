@@ -1,39 +1,52 @@
-#include <SPI.h> // This is the communication protocol 
-#include <SD.h> // this is the library that allows you to have access to the SD Card. 
+#include <SPI.h>
+#include <SD.h>
 
-const int chipSelect = 4; // This is the pin that "activates" the SD card
+const int chipSelect = 4;            // Seeed SD shield V4.0 uses D4 as CS
+File dataFile;
+const char* filename = "DATA.CSV";   // use const char* for SD library
 
-File dataFile; // we have to create some sort of generic file 
-String filename = "Data.csv";
 String Data = "Entry Number: ";
-
 int loopCount = 1;
-
 
 void setup() {
   Serial.begin(9600);
-  SD.begin(chipSelect);
-  SD.remove(filename);
-  String Header = "first entry during setup.";
-  File dataFile = SD.open(filename, FILE_WRITE);
-  if (dataFile)
-  {
-    dataFile.println(Header);
+  while (!Serial) { }  // optional, but nice when using Serial Monitor
+
+  Serial.println("Initializing SD card...");
+
+  pinMode(10, OUTPUT);              // hardware SS must be output
+
+  if (!SD.begin(chipSelect)) {
+    Serial.println("SD init failed.");
+    while (1) { delay(10); }
+  }
+  Serial.println("SD init done.");
+
+  SD.remove(filename);              // start with a clean file (optional)
+
+  dataFile = SD.open(filename, FILE_WRITE);
+  if (dataFile) {
+    dataFile.println("first entry during setup.");
     dataFile.close();
+    Serial.println("Wrote header line.");
+  } else {
+    Serial.println("Could not open file in setup.");
   }
 }
 
-void loop()
-{
-  Data. concat (loopCount); 
+void loop() {
+  Data = "Entry Number: ";
+  Data.concat(loopCount);
+
   dataFile = SD.open(filename, FILE_WRITE);
-  if (dataFile)
-  {
+  if (dataFile) {
     dataFile.println(Data);
     dataFile.close();
-    Serial.println("New line sucessfully written: " + Data);
+    Serial.println("New line successfully written: " + Data);
+  } else {
+    Serial.println("Error opening file.");
   }
-  loopCount = loopCount + 1;
-  Data = "Entry Number: ";
+
+  loopCount++;
   delay(1000);
 }

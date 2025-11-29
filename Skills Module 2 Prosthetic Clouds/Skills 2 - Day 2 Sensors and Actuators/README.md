@@ -254,10 +254,6 @@ flowchart TD
     linkStyle 5 stroke:#ccc,stroke-width:2px
     linkStyle 6 stroke:#ccc,stroke-width:2px                
 
-    
-
-
-
 ```
 
 **Escape characters** like `\n` (new line) and `\t` (tab) help format text.
@@ -315,6 +311,19 @@ Shield info: [http://wiki.seeedstudio.com/SD_Card_shield_V4.0/](http://wiki.seee
 **Pins**
 
 * Use the **ICSP** header (MOSI/MISO/SCK) plus a **CS/SS** pin (often **D4** on shields). Check your shield’s label.
+
+
+**Format SD Card**
+
+Arduino works only with SD cards that are formatted in FAT32. This is the file system that allows the Arduino to read and write data correctly.
+
+When you buy a new SD card, it is not always formatted in FAT32. Many large cards (32 GB and above) come as exFAT, which the Arduino cannot use.
+Therefore, you need to reformat the card to FAT32 before using it.
+
+To format the card, right-click on it in Windows → Format… → choose FAT32.
+If FAT32 does not appear in the list (common with large SD cards), use an external tool such as [**Rufus**](https://rufus.ie/en/) or the SD Card Formatter to convert it to FAT32.
+
+![alt text](images/Rufus.png)
 
 **Typical flow**
 
