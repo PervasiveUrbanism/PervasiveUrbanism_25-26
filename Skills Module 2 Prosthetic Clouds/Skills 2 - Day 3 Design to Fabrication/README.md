@@ -1,126 +1,275 @@
-# Design to Fabrication
+# **Design to Fabrication**
 
-## Design of the unit
 
-You can design your prototype in many different ways. Some people like to start building physically very early, while others prefer to stay longer in the digital design phase and reduce the time spent on physical prototyping. Both approaches are valid.
+[![Video Title](https://img.youtube.com/vi/rmlmOk4ubcU/0.jpg)](https://www.youtube.com/watch?v=rmlmOk4ubcU)
 
-What you must keep in mind is that your unit has **several design layers**:
+*Jamiroquai hat of [Studio Waldemeyer](https://www.waldemeyer.com/projects/jamiroquai)*
 
-* the **code** needs to be designed,
-* the **physical wiring** needs to be planned,
-* and the **unit itself** needs to be designed.
+## Designing Your Wearable / Prototype Unit
 
-While it is obvious that the Arduino code and the physical object require design, the **electronics assembly** is often forgotten.
+There is no single correct way to design your prototype.
+Some students prefer to start building physically straight away, while others stay longer in the digital design phase and move to fabrication later. Both approaches are valid.
 
-When it comes to assembling the electronic components, you should think about:
+However, every successful prototype has *three interconnected design layers*:
 
-* How does the wiring run through the unit?
-* Where does the battery sit?
-* How can I replace the battery?
-* Is the battery strong enough?
-* How are the boards fixed inside the unit?
+1. **Code** — the logic, behaviour, and data flow
+2. **Electronics** — sensors, wiring, power, components
+3. **Physical object** — casing, structure, material, assembly
+
+Students often focus heavily on code and the physical object, while forgetting the electronic assembly in between.
+Good prototypes integrate all three layers from the beginning.
+
+### Questions to guide your design
+
+When planning the electronics, consider:
+
+* How does the **wiring** run through the unit? Is it neat and safe?
+* Where does the **battery** sit?
+* Can you **replace** the battery easily?
+* Is the battery **strong enough** for your sensors and runtime?
+* How are the **boards fixed** inside the unit?
+* Is anything likely to **break loose** while worn on the body?
+
+These decisions should be part of your early design process—just like code structure or 3D geometry.
+
+---
+
+## Digital Tools for Early Design
 
 ### Miro
 
-Miro is useful if you want to sketch the wiring diagram and get a first understanding of how everything connects.
+Miro is useful for sketching quick wiring diagrams and mapping how sensors, batteries, and boards connect.
+It’s perfect for early idea development.
 
 ![alt text](assets/Miro.png)
 
+
+
 ### Tinkercad
 
-[Tinkercad](https://www.tinkercad.com/) is an Autodesk website that allows simple code and component simulation. You can build a virtual prototype, write your code, and test it digitally. This is a helpful way to experiment —however, the number of sensors and components is limited.
+[Tinkercad](https://www.tinkercad.com/) allows you to build simple digital prototypes.
+You can:
+
+* drag electronic components
+* wire them together
+* write Arduino code
+* test small circuits in simulation
+
+The number of available sensors is limited, but it is a great starting point for beginners.
 
 ![alt text](assets/image.png)
 
+
+
 ### Polycam
 
-[Polycam](https://poly.cam) is an iPhone app that lets you create 3D scans of objects such as your head or arms. These 3D scans can be exported and opened in Rhino. This allows you to design with accurate body geometry. Unfortunately, Polycam is not free.
-As an alternative, **B-Made** also has a 3D scanner, but it requires a separate [induction](https://moodle.ucl.ac.uk/course/view.php?id=39723&section=46#tabs-tree-start) before use.
+[Polycam](https://poly.cam) lets you scan body parts (head, arm, chest) directly with your iPhone.
+These scans can be exported and opened in Rhino, allowing you to design around **accurate body geometry** — extremely helpful for wearables.
+
+Polycam is not free.
+As an alternative, **B-Made** has a 3D scanner you can use after completing the required [induction](https://moodle.ucl.ac.uk/course/view.php?id=39723&section=46#tabs-tree-start).
+
+
 
 ### GrabCAD
 
-[GrabCAD](https://grabcad.com/library) is a website where you can download 3D models of your boards and components. Download them and open them in Rhino—there is no need to remodel these parts yourself.
+[GrabCAD](https://grabcad.com/library) provides 3D models of nearly all electronics components and development boards.
+Simply download the models and place them in Rhino.
+There is no need to remodel Arduinos, batteries, sensors, servos, or screws.
 
 ![alt text](assets/grabcad.png)
 
-A 3D file of the Arduino R4 WiFi
+*A 3D file of the Arduino R4 WiFi downloaded from GrabCAD*
 
-## Lasercutting
 
-B-Made offers a flexible laser-cutting service that lets you cut sheets at short notice. You will usually get the best results with **acrylic sheets** — transparent, coloured, or opaque. It is also possible to laser-cut **wood**, but this often leaves **charred, dark edges**, which may not look very clean.
+
+# Laser Cutting
+
+B-Made offers a very flexible laser-cutting service, often with short turnaround times.
+
+The material that gives the cleanest result is acrylic:
+
+* transparent
+* coloured
+* or opaque
+
+Wood can also be laser-cut, but it often burns at the edges, leaving dark, charred outlines.
 
 ![alt text](assets/One-Side-Plywood-1.jpg)
 
-Laser cutters can do more than just cut material — they can **engrave patterns** as well. Since every laser-cutting workshop uses slightly different machines, it’s important to know how to prepare your file properly.
+### Preparing your file
 
-Typically, you submit a **CAD file** that includes:
+Laser cutters read 2D vector files. You need to provide:
 
-* the **size of your sheet**,
-* and **lines** showing what should be cut or engraved — usually separated by **colour** or **layer**.
+* a rectangle showing the **sheet size**,
+* coloured **lines** indicating what should be cut or engraved.
 
-Make sure there are **no overlapping lines**, otherwise the laser will cut the same path twice.
+Different laser cutters follow different colour conventions, so always check the workshop guidelines.
 
-Tools such as [OpenNest](https://www.food4rhino.com/en/app/opennest) help you arrange your geometry on the sheets efficiently, reducing waste and cutting time.
+**Important:**
+Make sure **no duplicate lines** are overlapping. If two lines sit in the same place, the laser will cut the same path twice — burning the edge or melting the acrylic.
+
+Tools like [OpenNest](https://www.food4rhino.com/en/app/opennest) help you arrange your pieces efficiently, reducing waste and fabrication time.
 
 ![alt text](assets/Screenshot01.png)
 
-Most importantly, laser cutting leads to a very specific aesthetic. It naturally produces **contours, frames, and flat profiles**, rather than the solid, volumetric look you get from 3D printing.
+### **Aesthetics of laser cutting**
+
+Laser cutting naturally produces:
+
+* flat profiles
+* frames and ribs
+* layered silhouettes
+
+It is not ideal for smooth 3D forms — that’s where 3D printing or CNC milling is better.
 
 ![alt text](assets/DSCN8010.JPG)
 ![alt text](assets/Screenshot02.png)
 
-**Glueing Arcylic**
 
-Most model shops sell special glue for acrylic, often called **acrylic weld**. It is transparent and has a very thin, alcohol-like consistency. You apply it with a fine brush or a syringe. Be careful when using it and always work in a **well-ventilated space**, as the fumes are toxic.
 
-Acrylic weld creates **very strong, seamless joints** because it actually melts and fuses the two acrylic pieces together. The bond is strong and transparent. However, because the glue is so thin, you can only apply it to **edges or small contact points** — you **cannot** use it to glue two flat faces together.
+## Gluing Acrylic
+
+Most model shops sell acrylic glue (also called *acrylic weld*).
+It is a thin, transparent liquid that melts the acrylic slightly, fusing the parts together.
+
+**Safety:**
+Use it in a well-ventilated room. The fumes are strong and unhealthy.
+
+**Key points:**
+
+* Welds are very strong, but
+* the glue can only be applied to *edges* or *small contact points*
+* it **cannot** bond two large flat faces — the glue evaporates too quickly
 
 ![alt text](assets/gluing-acrylic-plastic.png)
 
-Gluing **along an edge** works well.
+Gluing an *edge joint* works perfectly:
 
 ![alt text](assets/IMG_8193.jpg)
 
-But **do not** try to glue two large flat surfaces together — it will not work. Don’t insist, don’t try — trust me... 
+Do **not** try to glue large surfaces together.
+Don’t insist, don’t try — trust me.
 
-## 3D Printing
 
-3D printing requires submitting a 3D file to a printing service, either at UCL or externally. Whether you are printing with filament or SLS, the basic principles are the same. Below is some general advice aimed at avoiding the most common pitfalls for first-time printers.
 
-**Watertight Models**
+# 3D Printing
 
-Your geometry needs to be converted into a mesh, and that mesh must be *watertight* — meaning no holes, gaps, or naked edges.
-Several software packages can help you control and repair meshes, but Rhino already provides a strong set of tools. Here is an excellent [video series](https://vimeopro.com/rhino/preparing-to-3d-print) that explains how to prepare models for 3D printing. It goes without saying that it is important to *model cleanly from the beginning*. Badly modelled geometry often requires significant time to fix later.
+3D printing requires submitting a 3D file to a printing service at UCL or externally.
+Whether using filament (FDM) or SLS, the same principles apply.
 
-**Scale**
+### 1. Watertight Models
 
-Every machine has a minimum printable resolution. Very small details may not print well or may disappear entirely. Find out the minimum feature size of your printer and adjust your model accordingly.
+Your mesh must be **closed** — no holes, no gaps, no naked edges.
 
-**Size**
+Rhino has good mesh-repair tools, and this [video series](https://vimeopro.com/rhino/preparing-to-3d-print) explains the entire process.
 
-3D printing is not ideal for large, monolithic parts. They take a long time to print and cool, and over time they can *warp, distort, or crack*.
+The best strategy is to **model cleanly from the beginning**, avoiding unnecessary complexity.
+
+
+
+### 2. Minimum Feature Size
+
+Every printer has a limit.
+Very small details (thin walls, tiny holes, sharp corners) may:
+
+* not print at all
+* break off
+* melt into blobs
+
+Always check the recommended minimum thickness for your chosen printer.
+
+
+
+### 3. Size and Warping
+
+Large monolithic prints take a long time and may crack or deform.
 
 ![alt text](assets/CNV00010_BlackOnTop.png)
 
-This white SLS piece, for example, was too large — approximately 400 mm in length. It would have been faster and cheaper to break it into smaller components.
-Alternatively, if the design allows, you can replace large solid areas with *lighter, skeletal structures* to avoid warping.
+This SLS piece (≈400 mm) was too large. A better approach would have been:
 
-**Connections to Other Materials**
+* splitting it into smaller components, or
+* using a *lightweight structure with large holes* instead of large solid volumes.
 
-SLA and SLS prints are notoriously weak and brittle. They split easily and cannot hold much pressure. This is usually fine for model-making, but extra care is needed when connecting them to screws, fasteners, or mechanical components.
 
-For example: *you cannot screw directly into SLS or SLA*.
-Instead, you must design your part to accept *threaded inserts*, such as heat-set or press-fit inserts. Here is a helpful guide: [Threaded inserts](https://uk.rs-online.com/web/content/discovery/ideas-and-advice/threaded-inserts-guide)
 
-##  Standoff Spacer 
+### 4. Screws, Inserts, and Connections
 
-You can fix boards to any base using standoff spacers.
+SLA and SLS prints are *brittle*. You cannot screw directly into them.
+
+Instead, design for *threaded inserts* (heat-set, press-fit).
+Here is a good [guide.](https://uk.rs-online.com/web/content/discovery/ideas-and-advice/threaded-inserts-guide)
+
+![alt text](assets/3DPrint.png)
+
+# Standoff Spacers
+
+To mount boards, you can use *standoff spacers*.
+They keep the PCB elevated and prevent shorts.
 
 ![alt text](assets/71Cut2G5mBL._SL1500_.jpg)
 
-## Prototyping boards and soldering
 
-## PCB Design
+# Prototyping Boards and Soldering
+
+For more permanent electronics, use a *prototyping board* with *soldering*.
+
+A prototyping board (also called perfboard or stripboard) looks like this:
+
+![alt text](assets/dropController-DIY_proto_101_Front.jpg)
+![alt text](assets/dropController-DIY_proto_102_Back.jpg)
+
+You will also need a soldering station:
+
+![alt text](assets/SolderStatiojn.jpg)
+
+The [Institute of Making](https://www.instituteofmaking.org.uk/workshop/tools/soldering-stations) has a fully equipped soldering workbench with everything you need.
+
+
+
+# PCB Design
+
+![alt text](assets/bila-deska-gatema-1-1024x507.jpg)
+
+A more advanced option is to design your own PCB.
+
+This gives you:
+
+* a clean, robust, custom layout
+* smaller form factors
+* professional-looking results
+
+But it requires:
+
+* time
+* learning new software
+* careful planning
+
+![alt text](assets/PCB.png)
+
+Two accessible options:
+
+### 1. Fritzing
+
+Fritzing is a German tool that:
+
+* lets you design simple PCBs
+* can produce the boards for you as a paid service
+
+It is beginner-friendly.
+
+### 2. Autodesk Fusion 360
+
+Fusion 360 includes powerful PCB design tools.
+You can:
+
+* create your schematic
+* route a PCB
+* export production files
+* manufacture your board anywhere
+
+Fusion offers a *free educational licence* for students.
 
 
 ---
@@ -129,45 +278,47 @@ You can fix boards to any base using standoff spacers.
 
 This chapter explains the main ways you can send data between an **Arduino**, a **phone**, and **Grasshopper**. Each method has different strengths. Some work through a USB cable, others use WiFi, and some are designed to send data across the internet. The goal is to understand how the protocols work before we look at the practical examples.
 
+## 0. Arduino to Python (Serial Communication)
+Connecting an Arduino to Python is one of the easiest ways to read sensor values or send commands. The Arduino sends data through the USB cable, and Python listens to this data through the serial port. On the Arduino side, you normally use ```Serial.begin()``` to open the connection and ```Serial.println()``` to send values. On the Python side, you open the same port (for example "COM3" or "/dev/ttyACM0") using a library like pyserial.
+
+Once the link is open, Python receives everything the Arduino prints: numbers, text, sensor values, or formatted messages. You can use this data live in Python to plot graphs, store measurements, make decisions, or control other software. It is a simple and reliable method to bridge hardware and software.
 
 ## 1. Arduino to Grasshopper (Serial Communication)
 
-The simplest way to connect an Arduino to Grasshopper is through a USB cable.
-When the Arduino is connected, it sends numbers or text through the **serial port**, and Grasshopper reads it. This is fast, very stable, and easy to set up.
+The simplest way to connect an Arduino to Grasshopper is through a USB cable. When the Arduino is connected, it sends numbers or text through the **serial port**, and Grasshopper reads it. 
 
-In practice, the Arduino uses commands like `Serial.print()` to send data. Grasshopper listens to this stream and turns it into values you can use to move geometry, record sensor readings, or trigger events. The only thing you need to be careful about is the **data format**. If the Arduino sends messy strings or too much text, Grasshopper has trouble reading it. A clean format with commas or line breaks works best.
+In practice, the Arduino uses commands like `Serial.print()` to send data. Grasshopper listens to this stream and turns it into values you can use to move geometry, record sensor readings, or trigger events. 
 
-Serial communication is ideal for first experiments, classroom prototypes, and situations where a cable is acceptable. You will use this method in the examples later.
-
-
+[Super Serial](https://www.food4rhino.com/en/app/superserial) - Grasshopper plug-in to read serial signals. 
 
 ## 2. OSC (Open Sound Control) Protocol
 
 OSC is a wireless protocol that runs over WiFi. It is widely used in media art, performance, interactive installations, and creative coding. OSC is fast and flexible and works across many platforms.
 
- **Arduino → Grasshopper with OSC**
+ **Arduino → Grasshopper/Python with OSC**
 
 If your Arduino has WiFi (for example an ESP32 or Arduino R4 WiFi), it can join your home or studio network and send data wirelessly to Grasshopper. This feels very different from the serial cable: the Arduino becomes a small network device that broadcasts messages. Grasshopper receives these OSC messages and can react in real time. This is very useful when your prototype needs to move freely, or when you cannot have long cables.
 
+
+**Using your iPhone as Sensor**
 **iPhone → Grasshopper with OSC**
 
-Phones can also send OSC. With apps like TouchOSC or similar tools, your iPhone becomes a wireless sensor: it can send its accelerometer, gyroscope, touchscreen positions, or custom sliders straight into Grasshopper. This is an easy way to build a quick controller or to test interactions without building hardware.
+Phones can also send OSC. With apps like TouchOSC, DataOSC or similar tools, your iPhone becomes a wireless sensor: it can send its accelerometer, gyroscope, touchscreen positions, or custom sliders straight into Grasshopper or Python. 
 
- **Grasshopper → Grasshopper with OSC**
-
-You can even send OSC between two different Grasshopper sessions. This is helpful if you want to split tasks between two laptops. One computer can do heavy calculations, and the other one can visualise the results. As long as both machines are on the same WiFi network, the communication is instant.
-
-OSC works very well in all these cases, but it is limited to the local network. It does not naturally send data across long distances or through the internet.
+![alt text](assets/OSCPhone.png)
 
 
+**Using your iPhone to create a network**
 
-## 3. MQTT
+Your iPhone allows you to create a Personal Hotspot. This means your phone creates its own Wi-Fi network that other devices can join. Any device connected to this hotspot can also use your phone’s internet connection.
 
-MQTT is a protocol designed for the “Internet of Things.” It is different from Serial and OSC because it does not send data directly from one device to another. Instead, every device sends its data to a **broker**, which is a server. Other devices can subscribe to the same topic and receive the messages. This creates a very flexible system.
+![alt text](assets/Hotspot.jpg)
 
-With MQTT you can connect an Arduino, your phone, and Grasshopper even if they are not in the same room or even the same city. As long as they all connect to the broker, they can talk to each other. This makes MQTT very good for long-distance communication, building-wide sensor networks, or projects that need to collect data over many hours or days.
+For example, if you are abroad (in Italy, for example), your Arduino can connect to the Wi-Fi network created by your iPhone, and through your phone it will have access to the internet. If your Arduino is powered by a battery, then all you need is your phone — making the whole setup very mobile. 
 
-The setup takes a bit more work, because you need an MQTT broker (for example HiveMQ Cloud or Mosquitto), but once it is running, the system is extremely stable. MQTT is used in smart homes, environmental sensors, and many large-scale IoT projects.
+**Saving Data in the cloud**
 
+There are third-party services such as ["arduino cloud"](https://cloud.arduino.cc/), [Adafruit IO](https://io.adafruit.com/), and [Blynk](https://www.blynk.io/)
+ that allow you to store and manage data online. Typically, your Arduino sends data directly to the platform, which then saves it and displays it in various ways. Many of these platforms also support two-way communication, meaning you can send commands back to the Arduino.
 
-
+These platforms can be as simple or as advanced as you want them to be. They evolve quite quickly, and I have personally used Adafruit IO and Blynk in the past — but new features and improvements are added all the time... so that doesn't mean much. 
