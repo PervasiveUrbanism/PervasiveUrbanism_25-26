@@ -65,3 +65,28 @@ Produce a *technical report* documenting the wearable device you developed in Te
 If your group project does not allow each student to clearly demonstrate individual work, you may alternatively design and document a *simplified Arduino-based data logger* that records a walk. This version should follow the tutorial code but include small modifications of your own, and does not require a design component.
 
 
+
+# Skills Module 3 — Affective Cinematics
+
+## OUTLINE
+This module investigates techniques of visual communication and narrative construction, focusing on short films as design outcomes. You will learn how to translate spatial and data-driven material, along with camera movement, shot types, duration, framing, colour, music, rhythm, and overall style… into storyboards, scenes, sequences, and a final edited film. Working with Adobe Premiere and After Effects, you will develop skills in editing, compositing, and animating images and video, as well as integrating text, sound, and voice. The module positions storytelling as a design tool, shaping atmospheric experiences, clarifying complex ideas, and engaging diverse audiences through cinematic expression.
+
+## LEARNING CONTENT
+
+* Introduction to storyboards: understanding what makes an effective storyboard, how to organize visual sequences, and how storyboarding supports architectural and spatial storytelling.
+* Developing familiarity with Adobe Premiere: creating sequences, editing and clipping footage, applying transitions, compositing layers, and integrating outputs from 3D models alongside subtitles, music, and sound to produce a coherent short film based on your storyboard.
+* Using Adobe After Effects to transform data-driven graphics into animated overlays, including working with masks, effects, and keyframes to build controlled motion.
+* Identifying online sources for geo-based footage, open-source video material, and audio assets that can strengthen the narrative structure of your film.
+
+## ASSIGNMENT
+
+Produce a short film of up to five minutes that communicates your narrative developed from the group research project. The film should present the research problem, demonstrate the wearable Arduino device and how it operates on site in Venice, and include animated data-visualisations. You may incorporate interviews, handheld footage, or other site-based recordings to show how the device and its readings respond to the research question. The final film must include subtitles, music, and sound. If the wearable device was developed as group work, that’s totally fine, the film and narrative must be produced individually. Show your own way of telling the story, with your own style, structure, and interpretation.
+
+You will also asked to complete two storyboard exercises:
+1.	Analyse a selected sequence from the documentary Tokyo Ride, extracting and redrawing its storyboard to understand structure, pacing, and visual logic.
+2.	Create your own storyboard and use it as the basis for your film.
+   
+The final submission consists of the completed video and a document containing both storyboard exercises.
+
+
+
