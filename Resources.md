@@ -61,6 +61,16 @@ Reference sites for inspiration:
 * [**Ryoji Ikeda**](https://www.ryojiikeda.com/)
 * [**Refik Anadol**](https://refikanadol.com/)
 
+**Maps and Infographics**
+
+Creating readable, beautiful maps that clearly communicate information is not as easy as it sounds. There are many references available, but I always return to the website of [**Morphocode**](https://morphocode.com/), which offers excellent blog posts, refernce maps and educational PDFs:
+
+* Blog post: **[Location and Time: Urban Data Visualisation](https://morphocode.com/location-time-urban-data-visualization/)**
+* PDF / Ebook: **[Urban Cartography](https://morphocode.com/wp-content/uploads/resources/morphocode-urban-cartography-ebook-web.pdf)**
+* Blog post: **[Using Colors in Maps](https://morphocode.com/the-use-of-color-in-maps/)**
+
+
+
 ### Adobe
 
 Your UCL account includes an **educational license** for Adobe Creative Cloud. Please install the relevant applications (e.g., Photoshop, Illustrator, After Effects, Premiere Pro) ahead of time.
@@ -76,7 +86,7 @@ Online storage solutions provide peace of mind, as your data remain safe—servi
 Alternatively, a **home-based storage system** such as the [**Synology BeeStation**](https://bee.synology.com/en-us/BeeStation) offers a hybrid setup: local file access at home combined with cloud backup and a sharing system similar to Dropbox.
 
 
----
+
 
 <a name="Learning"></a>
 
