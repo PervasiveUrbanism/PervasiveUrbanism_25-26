@@ -6,7 +6,7 @@
 
 ## Why Agentic Search?
 
-Most interactions with AI systems follow a familiar structure. A user asks a question, the system produces an answer, and the exchange ends. The interaction is immediate and self-contained. Once the reply is delivered, there is no continuity.
+Most interactions with AI systems follow a familiar structure. A user asks a question, the system produces an answer, and the exchange ends. The interaction is immediate and self-contained. 
 
 Agentic systems introduce another model. They are built to operate across time. An agent can repeat a task every day, adapt to changing conditions, and maintain a relation to an evolving environment. Instead of generating isolated responses, it develops a form of persistence. It keeps looking.
 
