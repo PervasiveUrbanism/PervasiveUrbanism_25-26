@@ -168,7 +168,7 @@ Once upload completed, the brief is part of the files within the project space. 
 
 ![Agent diagram](assets/Image02.png)
 
-A the first search looks like this: 
+The first search looks like this: 
 
 ![Agent diagram](assets/Image03.png)
 
