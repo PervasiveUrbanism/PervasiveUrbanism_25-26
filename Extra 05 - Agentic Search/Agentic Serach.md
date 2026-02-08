@@ -87,11 +87,12 @@ More elaborate systems may become relevant later. For now, simplicity supports l
 
 Note that you would need an ChatGPT Plus Account for this. 
 
-![alt text](Image 01.png)
+
+
 
 ## The brief
 
-The brief copuld look like this: 
+The brief could look like this: 
 
 ```
 ## Agent Brief – Daily Life in Castello, Venice
@@ -140,12 +141,13 @@ If information is uncertain, it should still try to make a reasonable judgement.
 The aim is to simulate how the city becomes meaningful for a specific person.
 
 ``` 
-Take this brief and save it as .txt file or .md file. Give it a version name like "Brief Tomaso v1". Within chap
+Take this brief and save it as .txt file or .md file. Give it a version name like "Brief Tomaso v1".
 
+Start a project space on ChartGPT and make sure that you have "Agent mode" enabled. The first instruction could be:
 
-Within ChartGPT, the first proppt coud be:
+![Agent diagram](assets/Image01.png)
 
-'''
+```
 Starter Prompt – Agent Initialisation
 
 You are an autonomous urban search agent.
@@ -161,10 +163,16 @@ Do not summarise the brief.
 Use it as the single source of truth for how you should operate.
 
 Once you have understood the instructions, confirm that you are ready and start the task for today.
-'''
-Make sure that you ahve agend mode activated. 
+```
+Once upload completed, the brief is part of the files within the project space. Change this to refine the search. 
 
-So the daily espinse would be: 
+![Agent diagram](assets/Image02.png)
+
+A the first search looks like this: 
+
+![Agent diagram](assets/Image03.png)
+
+And the response looks like that: 
 
 
 ```csv
