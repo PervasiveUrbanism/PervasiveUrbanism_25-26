@@ -75,24 +75,32 @@ When you start constructing your own agents, you will notice how sensitive the o
 
 ---
 
+
+
 # Set up an AI Agent
 
-## Why We Begin with OpenAI’s ChatGPT
+## Why We Begin with ChatGPT
 
-There are many technological ecosystems in which such behaviours could be implemented. Some platforms specialise in automation, others in database connections, others in complex orchestration of services.
+There are many technological ecosystems in which agent-like behaviour could be implemented. Some platforms specialise in automation, others in database connections, and others in complex orchestration of services.
 
-We begin with ChatGPT for a pragmatic reason. It allows us to reach meaningful results very quickly. The entry barrier is low, and the mechanics remain understandable. This clarity helps us focus on the conceptual implications rather than the technical overhead.
+We begin with ChatGPT for a pragmatic reason. It allows us to construct and test agentic behaviour quickly, without first building technical infrastructure. The entry barrier is low, and the mechanics remain legible. This clarity helps us focus on the conceptual implications of agentic search rather than on software engineering.
 
-More elaborate systems may become relevant later. For now, simplicity supports learning. 
+More elaborate systems may become relevant later. For now, simplicity supports learning.
 
-Note that you would need an ChatGPT Plus Account for this. 
-
-
+> To follow this exercise, access to **ChatGPT Plus** is required, as it enables project spaces and Agent Mode.
 
 
-## The brief
 
-The brief could look like this: 
+## Writing the Agent Brief
+
+An agent is not created by switching on a feature. It is created by writing.
+
+Before any search takes place, the agent must be described in a brief. This document defines who the agent represents, what kind of world it perceives, and how it should judge relevance. The brief does not describe *how* the agent searches in technical terms. Instead, it defines what would count as a meaningful result.
+
+In this example, the brief describes Tomaso, a fictional eighteen-year-old resident of Castello. His age, mobility, budget, interests, and social habits are specified carefully. These details are not decorative. They act as filters that shape every decision the agent will later make.
+
+The brief also defines the rhythm of the agent’s activity. It acts once per day, in the morning, and its task is always situated in the present. The aim is not to generate a comprehensive overview of Venice, but to produce a small, selective reading of what might realistically matter *today*.
+
 
 ```
 ## Agent Brief – Daily Life in Castello, Venice
@@ -141,11 +149,39 @@ If information is uncertain, it should still try to make a reasonable judgement.
 The aim is to simulate how the city becomes meaningful for a specific person.
 
 ``` 
-Take this brief and save it as .txt file or .md file. Give it a version name like "Brief Tomaso v1".
 
-Start a project space on ChartGPT and make sure that you have "Agent mode" enabled. The first instruction could be:
+Once written, the brief should be saved as a `.txt` or `.md` file and given a clear version number, such as:
 
-![Agent diagram](assets/Image01.png)
+```
+Agent_Brief_Tomaso_v1.md
+```
+
+This versioning is important. As the brief changes, the agent’s behaviour will change with it.
+
+
+
+## Creating a Project Space
+
+In ChatGPT, a project space provides a container for sustained work. It allows documents, instructions, and conversations to persist together over time.
+
+Create a new project and enable **Agent Mode**. Upload the agent brief into the project. From this point onward, the brief is no longer just a reference document. It becomes part of the agent’s working environment.
+
+The project space acts as a boundary. Inside it, the agent’s behaviour is shaped by the brief and its subsequent refinements. Outside it, the agent does not exist.
+
+![Project Space](assets/Image01.png)
+
+And do not forget to upload the brief... 
+
+![Brief](assets/Image02.png)
+
+
+## Initialising the Agent
+
+The agent must now be explicitly instructed to treat the brief as authoritative.
+
+This is done through a short initialisation prompt. The purpose of this prompt is not to restate the brief, but to establish a hierarchy. The brief defines behaviour. The agent must follow it strictly.
+
+A typical initialisation prompt might read:
 
 ```
 Starter Prompt – Agent Initialisation
@@ -154,9 +190,9 @@ You are an autonomous urban search agent.
 
 Your behaviour and objectives are fully defined in the project document titled:
 
-“Agent Brief – Tomaso v1.txt”
+“Agent Brief – Tomaso v1.md”
 
-I will upload the brief, Read that document carefully.
+Read that document carefully.
 
 Do not invent additional rules.
 Do not summarise the brief.
@@ -164,16 +200,19 @@ Use it as the single source of truth for how you should operate.
 
 Once you have understood the instructions, confirm that you are ready and start the task for today.
 ```
-Once upload completed, the brief is part of the files within the project space. Change this to refine the search. 
-
-![Agent diagram](assets/Image02.png)
-
-The first search looks like this: 
+At this point, the agent acknowledges the brief and performs its first search. 
 
 ![Agent diagram](assets/Image03.png)
 
-And the response looks like that: 
+What follows is not a generic answer, but a situated proposal shaped by Tomaso’s life conditions.
 
+
+
+## Reading the Output
+
+The agent’s response is intentionally limited. It does not aim for completeness. It aims for relevance.
+
+The output is structured as a small table in CSV format. Each entry describes a place, event, or situation that Tomaso could plausibly engage with today. Alongside basic factual information, the agent provides a short explanation that justifies the recommendation from Tomaso’s perspective.
 
 ```csv
 name,category,time,latitude,longitude,why_it_fits_tomaso
@@ -185,3 +224,15 @@ name,category,time,latitude,longitude,why_it_fits_tomaso
 "Arsenale Water Show (evening performance)","night show / spectacle","18:45 or 21:00","45.433188","12.351705","This is basically ‘big show’ right next to Castello. Go early to get a good spot with friends; feels major but still walkable." 
 "Teatrino Groggia + Parco Villa Groggia (quiet option if you want to escape crowds)","low-key hangout","late afternoon","45.4480183","12.3276783","If Tomaso wants a calmer Sunday moment (or the group splits): local park + small theatre area = cheap, relaxed, and very non-touristy." 
 ```
+
+When information is incomplete, the agent still attempts a reasonable judgement. The result should read less like a schedule and more like a proposal: a sketch of how the day *might* unfold.
+
+
+
+## Refinement Over Time & Scaling It up
+
+The first output is rarely the final one.
+
+After observing the results, the brief can be refined. Interests can be sharpened, constraints clarified, or priorities shifted. Each adjustment alters the agent’s behaviour, sometimes in subtle ways, sometimes dramatically.
+
+The process becomes one of designing a perspective. The brief evolves, and with it, the agent’s reading of the city evolves as well. At this point, you also have the tools to scale the method beyond a single persona. By changing age, mobility, responsibilities, or daily rhythms, the same city can be read from many different positions: a tourist encountering it for the first time, a young parent navigating it with a child, or a long-term resident negotiating familiarity and change...
