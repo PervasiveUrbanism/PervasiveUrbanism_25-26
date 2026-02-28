@@ -1,13 +1,13 @@
 # Agentic Search
 ### RC15 – Pervasive Urbanism
 
-
+---
 
 ## What Is Agentic Search?
 
 For most of the history of computing, search meant something precise and bounded. You submitted a query, the system matched it against a defined index, and returned a ranked list. The logic was deterministic — the same input, the same output. A well-organised answer to a well-formed question. Google, at its core, still works this way.
 
-Agentic search occupies a different position. It still searches the web, but you don't define the sources, the path, or the method in advance. Instead, you give the agent a task and a perspective — a brief. It decides where to look, judges what it finds, and filters results accordingly. The instructions are not a fixed procedure. They define an intention, and the agent figures out the rest.
+*Agentic search* occupies a different position. At its core it is AI-supported search — but unlike a standard query, you don't define the sources, the path, or the method in advance. Instead, you give the agent a task and a perspective — a brief. It decides where to look, judges what it finds, and filters results accordingly. The instructions are not a fixed procedure. They define an intention, and the agent figures out the rest.
 
 This puts agentic search somewhere between retrieval and simulation. It doesn't just fetch what exists — it interprets, on behalf of a particular point of view. And because it can run repeatedly, adapting to new information each time, it moves with the world rather than describing it from a fixed moment.
 
@@ -51,7 +51,7 @@ To make this concrete, we construct a daily agent for a fictional young resident
 
 Each morning at 9:00, the agent asks: *What might attract Tomaso today? Where could he realistically go?* The output is not a comprehensive cultural calendar — it's a selective reading filtered by walkability, cost, and atmosphere. A small proposal for how the city might unfold for one particular life.
 
-
+![Tomaso](assets\Tomaso.png)
 
 ## Setting Up an Agent in ChatGPT
 
@@ -133,7 +133,9 @@ To set up the agent, open a new chat in ChatGPT Plus and ask it to create a sche
 
 To refine the task over time, go to **Settings** and find your scheduled tasks. Open the task and update the brief directly there — adjusting the persona, the filters, or pasting in an updated feedback CSV with your annotations from previous runs. This is how the agent improves: not automatically, but through your own observations folded back into the instructions.
 
----
+![Settings](assets\Image05.png)       ![Settings](assets\Image04.png)
+
+
 
 ## Reading the Output
 
