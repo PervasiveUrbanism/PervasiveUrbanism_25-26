@@ -80,6 +80,25 @@ Through **hands-on tutorials in video editing software**, you will develop skill
 
 
 
+# WHAT CAN YOU DO HERE?
+
+This GitHub repository is your **central hub** for the Skills Module. Here is a quick overview of what you can do:
+
+| Action | How |
+|--------|-----|
+| **Browse tutorials and sample code** | Navigate the `Skills Module 1`, `Skills Module 2`, and `Extra` folders above |
+| **Download files** | Click any file to preview it, or use the green **Code → Download ZIP** button for the whole repo |
+| **Clone the repository** | Run `git clone https://github.com/PervasiveUrbanism/PervasiveUrbanism_25-26.git` or use [GitHub Desktop](https://desktop.github.com/) |
+| **Sync updates** | Pull the latest changes with `git pull`, or click **Fetch origin** in GitHub Desktop |
+| **Run Jupyter notebooks** | Open any `.ipynb` file locally in VS Code / Jupyter, or upload it to [Google Colab](https://colab.research.google.com/) |
+| **Watch tutorial recordings** | Visit the [YouTube Channel](https://www.youtube.com/playlist?list=PL0TJgiFZ0aRLwPoAfxv-mIsKGgSE3zlBg) linked below |
+| **Read additional resources** | See the [Resources](Resources.md) and [Submission](Skills%20Modules%20Submission.md) pages |
+| **Submit your work** | Fork this repo, add your work, and follow the [submission guidelines](Skills%20Modules%20Submission.md) |
+
+> **New to GitHub?** Install [GitHub Desktop](https://desktop.github.com/) and follow the [getting started guide](https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop).
+
+---
+
 # SUPPORT & RESOURCES
 
 ## GitHub
