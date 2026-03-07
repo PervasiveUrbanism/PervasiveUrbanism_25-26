@@ -10,6 +10,8 @@ This tutorial explains how to create and refine heatmaps in QGIS. Heatmaps are u
 
 In QGIS, heatmaps visualise the density or intensity of spatial data by creating a continuous surface from individual point locations. Each point contributes influence to the surrounding area, represented as a gradient that fades with distance.
 
+
+
 ### Two Methods for Creating Heatmaps
 
 There are two main ways to generate heatmaps in QGIS:
@@ -18,6 +20,10 @@ There are two main ways to generate heatmaps in QGIS:
 |--------|----------|-----------------|
 | **Processing Toolbox** | `Processing Toolbox → Interpolation → Heatmap` | Creates a static raster layer that can be saved and reused |
 | **Layer Style** | `Layer Properties → Symbology → Heatmap` | Dynamic, but recalculates on every view change (slower with large datasets) |
+
+**References:**
+- [QGIS Documentation: Heatmap (Kernel Density Estimation)](https://docs.qgis.org/3.40/en/docs/user_manual/processing_algs/qgis/interpolation.html) — Processing Toolbox method
+- [QGIS Documentation: Heatmap Renderer](https://docs.qgis.org/3.40/en/docs/user_manual/working_with_vector/vector_properties.html#heatmap-renderer) — Layer Style method
 
 > **Note:** This tutorial uses the Processing Toolbox method because it is more stable and efficient when preparing graphics.
 
