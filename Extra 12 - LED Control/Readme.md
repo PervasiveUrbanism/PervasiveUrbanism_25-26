@@ -115,7 +115,7 @@ The image below is the command ```10000000```
 
 
 
-![image](/assets\IMG_8085.jpeg)
+![image](/assets/IMG_8085.jpeg)
 
 #### Play sequences
 
