@@ -6,7 +6,7 @@ This tutorial explains how to control a series of LEDs directly from vvvv. We wi
 
 This method is intentionally simple and abstract. It can be scaled (to a certain degree) and extended to control other devices such as servos, motors, or relays.
 
-![image](/assets\IMG_8083.jpeg)
+![image](assets/IMG_8083.jpeg)
 
 ### Firmata vs Serial Communication
 
