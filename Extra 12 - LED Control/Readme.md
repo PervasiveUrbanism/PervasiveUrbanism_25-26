@@ -6,7 +6,7 @@ This tutorial explains how to control a series of LEDs directly from vvvv. We wi
 
 This method is intentionally simple and abstract. It can be scaled (to a certain degree) and extended to control other devices such as servos, motors, or relays.
 
-![image](assets/IMG_8083.jpeg)
+![image](assets/Animation.gif)
 
 ### Firmata vs Serial Communication
 
@@ -52,7 +52,7 @@ The hardware setup is simple: each digital pin drives one LED. Pins 0 and 1 shou
 
 All LED cathodes are connected to GND.
 
-
+![image](assets/IMG_8083.jpeg)
 
 ### Arduino Code
 
@@ -181,4 +181,6 @@ Combines to
 
 While the same animation could be written directly as one sequence, that is not the point here. The focus is on building more complex behaviours from simple base patterns.
 
-The combined logic can then be encapsulated into a process node. This allows you to chain multiple patterns together, switch between base patterns, or build increasingly complex animations in a modular way.
+The combining logic can then be encapsulated into a process node. This allows you to chain multiple patterns together, switch between base patterns, or build increasingly complex animations in a modular way.
+
+![image](assets/vvvv_screenshot_05.png)
