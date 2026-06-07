@@ -107,7 +107,7 @@ In it's core, the setup in vvvv is as simple as the screenhsot below:
 
 File: *01 Serial Communication.vl*
 
-![image](/assets\vvvv_screenshot.png)
+![image](assets/vvvv_screenshot.png)
 
 The **SerialPort4** node establishes communication with the Arduino. It allows you to send and receive data such as strings or floats. In this case, we are communicating using strings. Press apply to send over the commad. 
 
@@ -115,13 +115,13 @@ The image below is the command ```10000000```
 
 
 
-![image](/assets/IMG_8085.jpeg)
+![image](assets/IMG_8085.jpeg)
 
 #### Play sequences
 
 File: *02 Serial Communication.vl*
 
-![image](/assets/vvvv_screenshot_04.png)
+![image](assets/vvvv_screenshot_04.png)
 
 This is an extension of the previous setup that allows you to play animations or sequences. On the right-hand side of the patch, a list of strings defines different LED states. A counter generates an index, and based on this index, the corresponding string is selected and sent to the Arduino.
 
@@ -131,7 +131,7 @@ The image below shows an LFO node that advances the sequence automatically.
 
 File: *03 Serial Communication.vl*
 
-![image](/assets/vvvv_screenshot_06.png)
+![image](assets/vvvv_screenshot_06.png)
 
 #### **Creating Spreads**
 It may not be immediately clear how to create spreads of strings, as shown in the screenshot above. The following steps explain the process.
@@ -143,7 +143,7 @@ First, create a generic IOBox:
 
 Right-click on the IOBox, select Configure, and set the type to String:
 
-![image](/assets/vvvv_screenshot_02.png)
+![image](assets/vvvv_screenshot_02.png)
 
 
 Then continue configuring the IOBox:
@@ -152,7 +152,7 @@ Then continue configuring the IOBox:
 * Enable Show Values
 * Adjust the number of entries either in the configuration or directly in the top-left corner of the IOBox
 
-![image](/assets/vvvv_screenshot_03.png)
+![image](assets/vvvv_screenshot_03.png)
 
 
 This is generally all you need to play simple LED animations. 
@@ -163,7 +163,7 @@ This is generally all you need to play simple LED animations.
 
 File: *04 Serial Communication.vl*
 
-![image](/assets/vvvv_screenshot_07.png)
+![image](assets/vvvv_screenshot_07.png)
 
 This allows layering of control logic.
 
