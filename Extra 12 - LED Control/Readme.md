@@ -138,7 +138,7 @@ It may not be immediately clear how to create spreads of strings, as shown in th
 
 First, create a generic IOBox:
 
-![image](/assets/vvvv_screenshot_01.png)
+![image](assets/vvvv_screenshot_01.png)
 
 
 Right-click on the IOBox, select Configure, and set the type to String:
