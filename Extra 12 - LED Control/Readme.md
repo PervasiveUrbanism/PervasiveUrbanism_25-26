@@ -152,7 +152,7 @@ Then continue configuring the IOBox:
 * Enable Show Values
 * Adjust the number of entries either in the configuration or directly in the top-left corner of the IOBox
 
-![image](assets/vvvv_screenshot_03.png)
+![image](/assets/vvvv_screenshot_03.png)
 
 
 This is generally all you need to play simple LED animations. 
