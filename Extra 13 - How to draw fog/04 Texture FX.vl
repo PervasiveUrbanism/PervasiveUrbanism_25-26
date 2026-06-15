@@ -434,7 +434,7 @@
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
             <Pin Id="OpXCwjMHnCFMtmouuA9GyK" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="VUBfRchfBQJQKgi7FwR4NV" Name="Bounds" Kind="InputPin" DefaultValue="762, -326, 1549, 925">
+            <Pin Id="VUBfRchfBQJQKgi7FwR4NV" Name="Bounds" Kind="InputPin" DefaultValue="1030, -69, 620, 370">
               <p:TypeAnnotation LastCategoryFullName="System.Drawing" LastDependency="System.Drawing.dll">
                 <Choice Kind="TypeFlag" Name="Rectangle" />
               </p:TypeAnnotation>
