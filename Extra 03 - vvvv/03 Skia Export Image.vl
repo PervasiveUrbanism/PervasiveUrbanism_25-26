@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TAOwXEJNBLzNJCHajEYSge" LanguageVersion="2025.7.0" Version="0.128">
-  <NugetDependency Id="Uhge8pAjSNMLVIBA97qTUw" Location="VL.CoreLib" Version="2025.7.0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="IjIdrT8xrKRPbe0G3nKTtT" LanguageVersion="2025.7.1" Version="0.128">
+  <NugetDependency Id="Uhge8pAjSNMLVIBA97qTUw" Location="VL.CoreLib" Version="2025.7.1" />
   <Patch Id="IoeTy4iEuXBMf6RZLEVMce">
     <Canvas Id="UznlSBKwFZmPHFtaG22Zr1" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -72,11 +72,14 @@
             <Pin Id="H1aKilDpn5TMuFzD0Va7fh" Name="Back Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="MMxW4vfeaDIP6oPfCqEcOM" Name="Depth Buffer Format" Kind="InputPin" IsHidden="true" />
             <Pin Id="PRZM9MKyOqVMAgHhKUz5ys" Name="Input Priority" Kind="InputPin" IsHidden="true" />
-            <Pin Id="L2fKEs9qqS9Nuw4GneEOc5" Name="Node Context" Kind="InputPin" />
+            <Pin Id="L2fKEs9qqS9Nuw4GneEOc5" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="T9ZEWCUzO6UQa5ZvgzcOJf" Name="Always On Top" Kind="InputPin" IsHidden="true" />
+            <Pin Id="OZAr4Gq1LBgMRZcPMzxfPY" Name="Extend Into Title Bar" Kind="InputPin" IsHidden="true" />
             <Pin Id="JMsThEzgQv2MIQaSGKjo9s" Name="Input" Kind="InputPin" />
             <Pin Id="PFBwJxOzY3xLbFvolK3ffy" Name="Camera" Kind="InputPin" />
             <Pin Id="Dp3xEZTWh9fNM7m5tP9yPV" Name="Enable Default Camera" Kind="InputPin" />
             <Pin Id="H04cKYTsrJjLLkZ6hZ4J5U" Name="Title" Kind="InputPin" />
+            <Pin Id="C239DuzNdfCODkoqgTOMOF" Name="Title Bar Interaction Width" Kind="InputPin" IsHidden="true" />
             <Pin Id="UQplmk4dmjiOBHjiYBfOx1" Name="Clear Color" Kind="InputPin" />
             <Pin Id="Ash48B3GiXQNnWlGCB6DAZ" Name="Clear" Kind="InputPin" />
             <Pin Id="AUdaSZIUmKKPW3RUbrHMfW" Name="Post Effects" Kind="InputPin" />
@@ -102,6 +105,8 @@
             <Pin Id="Ng6u06gyoGKNSId7JYghNJ" Name="Present Call Intercept" Kind="InputPin" IsHidden="true" />
             <Pin Id="FLScqVKvHyIPbPb8f7BdJp" Name="Back Buffer" Kind="OutputPin" IsHidden="true" />
             <Pin Id="IhwMA2ZvCH7LVpWE4pJ0cd" Name="Depth Buffer" Kind="OutputPin" IsHidden="true" />
+            <Pin Id="Ngq5m4dNLXlPJCRJ7Eeca3" Name="Output Color Space" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VClB1AkTiFbPPm2m6323d4" Name="Backbuffer Format" Kind="InputPin" IsHidden="true" />
           </Node>
           <Node Bounds="392,545,205,19" Id="CZaKrVU0cMvOZwsbPFLfNy">
             <p:NodeReference LastCategoryFullName="Stride.Lights" LastDependency="VL.Stride.Engine.vl">
@@ -251,12 +256,12 @@
                 <Pin Id="HZG1dTWCwT9QdL0ULJGKx5" Name="Image File Type" Kind="InputPin" />
                 <Pin Id="VKoreNjh6UFMZuIPNqFqcZ" Name="Write" Kind="InputPin" />
               </Node>
-              <Pad Id="I7efh1i5UOaMlFwWMJzViy" Comment="Filename &amp; Path" Bounds="1370,1099,212,17" ShowValueBox="true" isIOBox="true" Value="Export">
+              <Pad Id="I7efh1i5UOaMlFwWMJzViy" Comment="Filename &amp; Path" Bounds="1370,1099,212,17" ShowValueBox="true" isIOBox="true">
                 <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Path" />
                 </p:TypeAnnotation>
               </Pad>
-              <Pad Id="AsAmQRcVVtWOl5qkA4mrUe" Comment="Image File Type" Bounds="1397,1128,56,15" ShowValueBox="true" isIOBox="true" Value="Png">
+              <Pad Id="AsAmQRcVVtWOl5qkA4mrUe" Comment="Image File Type" Bounds="1397,1128,57,15" ShowValueBox="true" isIOBox="true" Value="Png">
                 <p:TypeAnnotation LastCategoryFullName="VL.Stride.Graphics" LastDependency="VL.Stride.vl">
                   <Choice Kind="TypeFlag" Name="TextureWriterFileType" />
                 </p:TypeAnnotation>
@@ -300,7 +305,7 @@
                   <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
                 </p:ValueBoxSettings>
               </Pad>
-              <Pad Id="RCbVkzBaaKVL8C7EiPCz8G" Comment="Format" Bounds="1295,1022,173,15" ShowValueBox="true" isIOBox="true" Value="R8G8B8A8_UNorm_SRgb">
+              <Pad Id="RCbVkzBaaKVL8C7EiPCz8G" Comment="Format" Bounds="1295,1022,174,15" ShowValueBox="true" isIOBox="true" Value="R8G8B8A8_UNorm_SRgb">
                 <p:TypeAnnotation LastCategoryFullName="Stride.API.Graphics" LastDependency="VL.Stride.vl">
                   <Choice Kind="TypeFlag" Name="PixelFormat" />
                 </p:TypeAnnotation>
@@ -426,7 +431,7 @@
           <Overlay Id="FmU0vb4te7MPCMiug6UgjV" Bounds="1858,976,553,482" />
         </Canvas>
         <Patch Id="Qx1p245y17jMHdd7QsDZRb" Name="Create" />
-        <Patch Id="TOo9VtvNNWROSu3hoaC0RE" Name="Update" />
+        <Patch Id="TOo9VtvNNWROSu3hoaC0RE" Name="Update" ParticipatingElements="RKoE4Rn7bSAQdqtv8tWGRQ" />
         <ProcessDefinition Id="HC3KR43hQzGPcPslkMOPLS">
           <Fragment Id="IVgLJaI0cKJQOmJZn74Im5" Patch="Qx1p245y17jMHdd7QsDZRb" Enabled="true" />
           <Fragment Id="KJ87NBkv3MgOsfWEdLSzMt" Patch="TOo9VtvNNWROSu3hoaC0RE" Enabled="true" />
@@ -462,9 +467,10 @@
         <Link Id="GTIj39zepwiOgk6U5DST0S" Ids="FdnHrvOklKkOkG72g5ZRZ4,RhU2fUOEGqBOiMjczkP2rc" />
         <Link Id="N6qTeB9hKF7PGD8kAxyF8B" Ids="Lm6381kL2foLXiCkT2mAAc,AKc6hVXKLSDPr5iMDiCXD0" />
         <Link Id="NnvEhDjntTmMqtmWqZNzqd" Ids="TSWhsrEK4qvQB8Srmok84L,DIyqx8PHJLGNIYPaerH2Ks" />
+        <Link Id="RKoE4Rn7bSAQdqtv8tWGRQ" Ids="AKc6hVXKLSDPr5iMDiCXD0,I7efh1i5UOaMlFwWMJzViy" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="PE56fopZKOzO60i1G80wK3" Location="VL.Stride" Version="2025.7.0" />
-  <NugetDependency Id="NW03pd2Z3C1OeAk3wEiRdT" Location="VL.Stride.TextureFX" Version="2025.7.0" />
+  <NugetDependency Id="PE56fopZKOzO60i1G80wK3" Location="VL.Stride" Version="2025.7.1" />
+  <NugetDependency Id="NW03pd2Z3C1OeAk3wEiRdT" Location="VL.Stride.TextureFX" Version="2025.7.1" />
 </Document>
